@@ -16,7 +16,7 @@ body {
 
 .parallax {
   /* background-image: url("./assets/images/darth_maul.png"); */
-  background-image: url(assets/images/Top.png);
+  background-image: url(images/Top.png);
   max-height: 500px;
   background-attachment: fixed;
   background-position: center;
