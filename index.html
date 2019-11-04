@@ -14,12 +14,17 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+    <!-- Firebase References -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
     <!-- css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
 
   </head>
 
-  <body class="bg-dark text-light">
+  <body class="text-light" style="background-image:
+    url('./assets/images/bg.gif');">
     <div class="container">
       <div class="parallax mt-4">
         <div class="row m-0">
@@ -171,12 +176,11 @@
           <input type="email" class="form-control" name="email"
             id="contactEmail"
             aria-describedby="helpId" placeholder="email@email.com">
-          <label for="aboutMe">Message</label>
-          <textarea type="textarea" class="form-control mb-2" name="name"
-            id="contactName" aria-describedby="helpId" placeholder="John
-            Smith">
+          <label for="message">Message</label>
+          <textarea type="textarea" class="form-control mb-2" name="message"
+            id="contactMessage" aria-describedby="helpId" placeholder="Tell me about you...">
           </textarea>
-          <button type="submit"
+          <button id="contactSubmit" type="submit"
             class="btn btn-primary justify-content-end">Submit</button>
         </div>
       </div>

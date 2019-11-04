@@ -1,0 +1,85 @@
+.container div {
+  /* height: 200px; */
+  /* border: 2px solid red; */
+  margin-bottom: 10px;
+}
+
+/* .container div:nth-child(even) {
+        background-color: #253965;
+      } */
+
+body {
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 36px;
+}
+
+.parallax {
+  /* background-image: url("./assets/images/darth_maul.png"); */
+  background-image: url("/assets/images/Top.png");
+  max-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: block;
+  line-height: 500px;
+  /* padding: 20px; */
+  font-size: 48px;
+}
+
+#profileImg {
+  max-width: 400px;
+  height: 310px;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  transition: 0.9s ease;
+  background-color: rgb(133, 118, 99);
+}
+
+.projectImgSection:hover .overlay {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.overlay, .projectImg {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* .projectImg:hover {
+  cursor: zoom-in;
+} */
+
+@media screen and (max-width: 800px) {
+  .parallax {
+    max-height: 100%;
+    line-height: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 35px;
+  }
+  #profileImg {
+    width: 100%;
+    height: 100%;
+  }
+  .projectImgSection {
+    height: 100%;
+  }
+}
