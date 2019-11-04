@@ -35,7 +35,7 @@ body {
 }
 
 .projectImgSection:hover .overlay {
-  opacity: 0.7;
+  opacity: 0.85;
   cursor: pointer;
 }
 
@@ -55,6 +55,9 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+.exp{
+  height: 150px;
 }
 
 

@@ -1,9 +1,9 @@
-
 $('.overlay').on('click', function () {
 	var imgAlt = $(this).next().attr('alt');
 	window.open(imgAlt, '_blank');
 });
 $(document).ready(function () {
+
 	var config = {
 		apiKey: "AIzaSyCafVsPaIWWNFKImMZ4eH_i8cqwiNbXg4A",
 		authDomain: "fbase-first-project.firebaseapp.com",
@@ -16,18 +16,22 @@ $(document).ready(function () {
 	};
 	firebase.initializeApp(config);
 	var database = firebase.database();
-	$("#contactSubmit").click(function (e) {
+	$("#submitMessage").click(function (e) {
 		e.preventDefault();
-		var userName = $("#contactName").val();
-		console.log(userName);
-		var userEmail = $("#contactEmail").val();
-		var userMessage = $("#contactMessage").val();
+		var userFirstName = $("#firstName").val();
+		var userLastName = $("#lastName").val();
+		var userEmail = $("#email").val();
+		var userSubject = $("#subject").val();
+		var userMessage = $("#message").val();
 
 		database.ref().push({
-			name: userName,
+			firstname: userFirstName,
+			lastName: userLastName,
 			email: userEmail,
+			subject: userSubject,
 			message: userMessage
 		})
+		$("input, textarea").val("");
 	});
 
 });

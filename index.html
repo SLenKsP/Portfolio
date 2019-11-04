@@ -11,6 +11,9 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous" />
+    <!-- font awesome -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
@@ -20,7 +23,11 @@
       src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./assets/style.css">
-
+    <!-- aos css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- animate css -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   </head>
 
   <body class="text-light" style="background-image:
@@ -57,27 +64,27 @@
         <span>Work Experience</span>
       </div>
       <div id="workExperience">
-        <div class="mb-2">
+        <div class="exp mb-2" data-aos="fade-right">
           <h5 class="mb-0">Software Quality Analyst</h5>
           <small>Garmin International, Olathe, KS</small>
           <p></p>
         </div>
-        <div class="mb-2">
+        <div class="exp mb-2" data-aos="fade-left">
           <h5 class="mb-0">Software Quality Specialist</h5>
           <small>Garmin International, Olathe, KS</small>
           <p></p>
         </div>
-        <div class="mb-2">
+        <div class="exp mb-2" data-aos="fade-right">
           <h5 class="mb-0">Software Quality Tester</h5>
           <small>Garmin International, Olathe, KS</small>
           <p></p>
         </div>
-        <div class="mb-2">
+        <div class="exp mb-2" data-aos="fade-left">
           <h5 class="mb-0">Product Support Specialist</h5>
           <small>Garmin International, Olathe, KS</small>
           <p></p>
         </div>
-        <div class="mb-2">
+        <div class="exp mb-2" data-aos="fade-right">
           <h5 class="mb-0">Technical Engineer</h5>
           <small>3R Telecom Ltd, Essex, UK</small>
           <p></p>
@@ -88,29 +95,29 @@
       </div>
       <div id="skills">
         <div>
-          <h5>Programming</h5>
+          <h5 data-aos="flip-up">Programming</h5>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>Javascript
+            <li data-aos="flip-down">HTML</li>
+            <li data-aos="flip-down">CSS</li>
+            <li data-aos="flip-down">Bootstrap</li>
+            <li data-aos="flip-down">Javascript
               <ul>
-                <li>Jquery</li>
-                <li>Node.js</li>
+                <li data-aos="flip-down">Jquery</li>
+                <li data-aos="flip-down">Node.js</li>
               </ul>
             </li>
-            <li>Java (Basics)</li>
+            <li data-aos="flip-down">Java (Basics)</li>
           </ul>
         </div>
         <div>
-          <h5>Tools</h5>
+          <h5 data-aos="flip-up">Tools</h5>
           <ul>
-            <li>Charle's Proxy</li>
-            <li>Android UI automator</li>
-            <li>Application LifeCycle Management</li>
-            <li>Fiddler</li>
-            <li>Github</li>
-            <li>Firebase</li>
+            <li data-aos="flip-down">Charle's Proxy</li>
+            <li data-aos="flip-down">Android UI automator</li>
+            <li data-aos="flip-down">Application LifeCycle Management</li>
+            <li data-aos="flip-down">Fiddler</li>
+            <li data-aos="flip-down">Github</li>
+            <li data-aos="flip-down">Firebase</li>
           </ul>
         </div>
       </div>
@@ -128,37 +135,38 @@
         <span>Projects</span>
       </div>
       <div id="projects">
-        <div class="row mx-0 mb-2">
+        <div class="myProject row mx-0 mb-2" data-aos="zoom-in-up">
           <div class="col-md-1"></div>
           <div class="col-12 col-md-10 projectImgSection mb-2 p-0">
             <div class="overlay">
-              <div class="text text-center">Check out on Github</div>
+              <div class="text text-center">View on Github</div>
             </div>
             <img class="projectImg"
               src="./assets/images/star_wars_rpg.png"
-              alt="https://slenksp.github.io/Star-Wars-RPG-Game/" />
+              alt="https://github.com/SLenKsP/Star-Wars-RPG-Game" />
           </div>
           <div class="col-md-1"></div>
         </div>
-        <div class="row mx-0 mb-2">
+        <div class="myProject row mx-0 mb-2" data-aos="zoom-in-up">
           <div class="col-md-1"></div>
           <div class="col-12 col-md-10 projectImgSection mb-2 p-0">
             <div class="overlay">
-              <div class="text text-center">Check out on Github</div>
+              <div class="text text-center">View on Github</div>
             </div>
-            <img class="projectImg" src="./assets/images/national_parks.png"
-              alt="https://slenksp.github.io/Project_1_National_Parks/" />
+            <img class="projectImg"
+              src="./assets/images/national_parks.png"
+              alt="https://github.com/SLenKsP/Project_1_National_Parks" />
           </div>
           <div class="col-md-1"></div>
         </div>
-        <div class="row mx-0 mb-2">
+        <div class="myProject row mx-0 mb-2" data-aos="zoom-in-up">
           <div class="col-md-1"></div>
           <div class="col-12 col-md-10 projectImgSection mb-2 p-0">
             <div class="overlay m-0 p-0">
-              <div class="text text-center p-0">Check out on Github</div>
+              <div class="text text-center p-0">View on Github</div>
             </div>
             <img class="projectImg" src="./assets/images/trivia.png"
-              alt="https://slenksp.github.io/Trivia-Timed-Questions/" />
+              alt="https://github.com/SLenKsP/Trivia-Timed-Questions" />
           </div>
           <div class="col-md-1"></div>
         </div>
@@ -167,26 +175,95 @@
       <div class="parallax">
         <span>Write to me</span>
       </div>
-      <div id="contactMe">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" name="name" id="contactName"
-            aria-describedby="helpId" placeholder="John Smith">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" name="email"
+      <div id="contactMe" class="mt-2">
+        <!-- <div class="form-group">
+          <input type="text" class="form-control w-50" name="name"
+            id="contactFirstName"
+            aria-describedby="helpId" placeholder="First Name">
+          <input type="text" class="form-control w-50 d-inline" name="name"
+            id="contactLastName"
+            placeholder="Last Name">
+
+          <input type="email" class="form-control w-50" name="email"
             id="contactEmail"
-            aria-describedby="helpId" placeholder="email@email.com">
-          <label for="message">Message</label>
-          <textarea type="textarea" class="form-control mb-2" name="message"
-            id="contactMessage" aria-describedby="helpId" placeholder="Tell me about you...">
+            placeholder="email@email.com">
+
+          <textarea type="textarea" class="form-control w-50 mb-2"
+            name="message"
+            id="contactMessage" placeholder="Write to me">
           </textarea>
           <button id="contactSubmit" type="submit"
-            class="btn btn-primary justify-content-end">Submit</button>
+            class="btn btn-primary">Submit</button>
+        </div> -->
+        <form class="form">
+          <div class="row mb-2">
+            <div class="form-group col-6" data-aos="fade-right">
+              <input type="text" class="form-control" id="firstName"
+                placeholder="First name">
+            </div>
+            <div class="form-group col-6" data-aos="fade-left">
+              <input type="text" class="form-control" id="lastName"
+                placeholder="Last name">
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="form-group col-12" data-aos="flip-right">
+              <input type="email" class="form-control" id="email"
+                placeholder="Email address">
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="form-group col-12" data-aos="flip-left">
+              <input type="text" class="form-control" id="subject"
+                placeholder="Subject of the message">
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="form-group col-12" data-aos="zoom-out-down">
+              <textarea cols="30" rows="10" class="form-control" id="message"
+                placeholder="Type your message here.."></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="submit" id="submitMessage" class="btn btn-info border
+                rounded-pill" value="Send Message">
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- footer -->
+      <footer class="site-section bg-dark footer">
+        <div class="container p-3">
+          <div class="row mb-5">
+            <div class="col-md-4" data-aos="fade-right">
+              <h3 class="footer-title">My Address</h3>
+              <p><span class="d-inline-block d-md-block">14407 W. 94th Ter</span>
+                San Lenexa, Kansas, 66215</p>
+            </div>
+            <div class="col-md-4 mx-auto" data-aos="zoom-in-up">
+              <h3 class="footer-title">Phone</h3>
+              <p><span class="d-inline-block d-md-block">913-213-4041</span></p>
+            </div>
+            <div class="col-md-4" data-aos="fade-left">
+              <h3 class="footer-title">Email</h3>
+              <p><span class="d-inline-block d-md-block">sagarpatel16@gmail.com</span></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <p>
+
+                Copyright ©
+                <script
+                  type="text/javascript">document.write(new Date().getFullYear());</script>
+                | Sagar Patel
+
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div id="footer">
-        <h6>&copy; Sagar Patel</h6>
-      </div>
+      </footer>
     </div>
 
     <!-- Supporting JS -->
@@ -200,6 +277,11 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+          AOS.init();
+        </script>
     <script src="./assets/javascript/script.js">
 
     </script>
