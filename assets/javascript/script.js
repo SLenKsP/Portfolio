@@ -1,6 +1,12 @@
-$('.overlay').on('click', function () {
-	var imgAlt = $(this).next().attr('alt');
+$('.codeOnGithub').on('click', function () {
+	var imgAlt = $(this).parent().parent().next().attr("alt")
+	console.log(imgAlt);
 	window.open(imgAlt, '_blank');
+});
+$('.currentVersion').on('click', function () {
+	var dataLink = $(this).parent().parent().next().attr("data")
+	console.log(dataLink);
+	window.open(dataLink, '_blank');
 });
 $(document).ready(function () {
 
