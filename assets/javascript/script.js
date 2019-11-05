@@ -10,7 +10,7 @@ $('.currentVersion').on('click', function () {
 });
 $(document).ready(function () {
 	$("li").prepend('<i class="fa fa-angle-double-right"></i>', " ");
-		
+	$("#error").hide();
 	var config = {
 		apiKey: "AIzaSyCafVsPaIWWNFKImMZ4eH_i8cqwiNbXg4A",
 		authDomain: "fbase-first-project.firebaseapp.com",
@@ -30,15 +30,21 @@ $(document).ready(function () {
 		var userEmail = $("#email").val();
 		var userSubject = $("#subject").val();
 		var userMessage = $("#message").val();
+		if (userFirstName.length === 0 || userLastName.length === 0 || userEmail.length === 0 || userSubject.length === 0 || userMessage.length === 0) {
+			$("#error").show();
+			$("input, textarea").val("");
+		} else {
+			$("#error").hide();
+			database.ref().push({
+				firstname: userFirstName,
+				lastName: userLastName,
+				email: userEmail,
+				subject: userSubject,
+				message: userMessage
+			})
+			$("input, textarea").val("");
+		}
 
-		database.ref().push({
-			firstname: userFirstName,
-			lastName: userLastName,
-			email: userEmail,
-			subject: userSubject,
-			message: userMessage
-		})
-		$("input, textarea").val("");
 	});
 
 });
