@@ -9,7 +9,8 @@ $('.currentVersion').on('click', function () {
 	window.open(dataLink, '_blank');
 });
 $(document).ready(function () {
-
+	$("li").prepend('<i class="fa fa-angle-double-right"></i>', " ");
+		
 	var config = {
 		apiKey: "AIzaSyCafVsPaIWWNFKImMZ4eH_i8cqwiNbXg4A",
 		authDomain: "fbase-first-project.firebaseapp.com",

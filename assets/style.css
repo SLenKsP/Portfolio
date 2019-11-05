@@ -19,28 +19,42 @@ body {
   display: block;
   line-height: 500px;
   /* padding: 20px; */
-  font-size: 48px;
-}
-.parallax:not(:first-child){
-  max-height: 100px;
-  line-height: 100px;
 }
 
-#myName{
-  display : flex;
-  align-items : center;
+.parallax:not(:first-child) {
+  color: rgba(116, 8, 8, 0.886);
+  /* max-height: 200px;
+  line-height: 200px; */
+  font-size: 36px;
+}
+
+li {
+  list-style-type: none;
+  /* display: inline; */
+  margin-right: 10px;
+}
+
+#programmingLanguages {
+  font-size: 100px;
+}
+
+#myName {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  
 }
 
 #profileImg {
   max-width: 300px;
   height: 210px;
 }
+
 .inner {
   /* border: 1px solid #000000; */
   display: table-cell;
   vertical-align: middle;
+  font-weight: bold;
+  text-shadow: 1px 4px 6px rgba(0, 0, 0, 0.8), 0px -5px 35px rgba(1, 1, 1, 0.3), -39px -32px 2px rgba(249, 75, 22, 0);
 }
 
 .overlay {
@@ -55,8 +69,7 @@ body {
   cursor: pointer;
 }
 
-.overlay,
-.projectImg {
+.overlay, .projectImg {
   width: 100%;
   height: 100%;
 }
@@ -72,37 +85,29 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.exp{
-  height: 150px;
-}
 
 
 @media screen and (min-width: 300px) {
-  .parallax {    
+  .parallax {
     max-height: 100%;
     line-height: 100%;
     font-size: 24px;
     font-weight: bold;
     padding: 35px;
   }
-  #myName{
+  #myName {
     max-height: 100%;
     line-height: 100%;
   }
-  .parallax:not(:first-child){
+  .parallax:not(:first-child) {
     max-height: 100%;
     line-height: 100%;
   }
-  .text{
+  .text {
     font-size: 50%;
   }
-
   #profileImg {
     width: 100%;
     height: 100%;
-  }
-
-  .projectImgSection {
-    /* height: 100%; */
   }
 }

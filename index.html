@@ -1,278 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Portfolio- Sagar Patel</title>
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <!-- Firebase References -->
-  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-  <!-- css -->
-  <link rel="stylesheet" href="./assets/style.css">
-  <!-- aos css -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio- Sagar Patel</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous" />
+    <!-- font awesome -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+    <!-- Firebase References -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- aos css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- devicon -->
+    <link rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  </head>
 
-<body class="text-light" style="background-image:
+  <body class="text-light" style="background-image:
     url('./assets/images/bg.gif');">
-  <div class="container">
-    <div class="parallax mt-4">
-      <div id="profileRow" class="row m-0">
-        <div class="profileCol col-12 col-md-4 m-md-0">
-          <img id="profileImg" src="./assets/images/profile.png" alt="profile.png" class="border rounded-circle" />
-        </div>
-        <div id="myName" class="profileCol col-12 col-md-8 mt-4 m-md-0 p-0">
-          <div class="inner">
-            <h1>Sagar Patel</h1>
-            <h6>Software Quality Analyst</h6>
+    <div class="container">
+      <div class="parallax mt-4">
+        <div id="profileRow" class="row m-0">
+          <div class="profileCol col-12 col-md-4 m-md-0">
+            <img id="profileImg" src="./assets/images/profile.png"
+              alt="profile.png" class="border rounded-circle" />
           </div>
-
-        </div>
-      </div>
-
-    </div>
-    <div id="aboutMe">
-      <p>
-        I am a QA Analyst with nearly 5 years of experience providing
-        Applications with accurate and thorough testing and analysis of
-        manufacturing processes. Profound understanding of using samples,
-        control points, and process variables to test a product’s quality,
-        reliability, and functionality.
-      </p>
-      <p>
-        Looking for some change and some more challenges at the job, I decided
-        to learn some coding. Tried to look into some programming and
-        scripting languages and I found myself comfirtable with Java and
-        Javascript and decided to know more about it.
-      </p>
-    </div>
-    <div class="parallax">
-      <span>Work Experience</span>
-    </div>
-    <div id="workExperience">
-      <div class="exp mb-2" data-aos="fade-right" >
-        <h5 class="mb-0">Software Quality Analyst</h5>
-        <small>Garmin International, Olathe, KS</small>
-        <p></p>
-      </div>
-      <div class="exp mb-2" data-aos="fade-left" >
-        <h5 class="mb-0">Software Quality Specialist</h5>
-        <small>Garmin International, Olathe, KS</small>
-        <p></p>
-      </div>
-      <div class="exp mb-2" data-aos="fade-right" >
-        <h5 class="mb-0">Software Quality Tester</h5>
-        <small>Garmin International, Olathe, KS</small>
-        <p></p>
-      </div>
-      <div class="exp mb-2" data-aos="fade-left" >
-        <h5 class="mb-0">Product Support Specialist</h5>
-        <small>Garmin International, Olathe, KS</small>
-        <p></p>
-      </div>
-      <div class="exp mb-2" data-aos="fade-right" >
-        <h5 class="mb-0">Technical Engineer</h5>
-        <small>3R Telecom Ltd, Essex, UK</small>
-        <p></p>
-      </div>
-    </div>
-    <div class="parallax">
-      <span>Skills</span>
-    </div>
-    <div id="skills">
-      <div>
-        <h5 data-aos="flip-up">Programming</h5>
-        <ul>
-          <li data-aos="flip-down">HTML</li>
-          <li data-aos="flip-down">CSS</li>
-          <li data-aos="flip-down">Bootstrap</li>
-          <li data-aos="flip-down">Javascript
-            <ul>
-              <li data-aos="flip-down">Jquery</li>
-              <li data-aos="flip-down">Node.js</li>
-            </ul>
-          </li>
-          <li data-aos="flip-down">Java (Basics)</li>
-        </ul>
-      </div>
-      <div>
-        <h5 data-aos="flip-up">Tools</h5>
-        <ul>
-          <li data-aos="flip-down">Charle's Proxy</li>
-          <li data-aos="flip-down">Android UI automator</li>
-          <li data-aos="flip-down">Application LifeCycle Management</li>
-          <li data-aos="flip-down">Fiddler</li>
-          <li data-aos="flip-down">Github</li>
-          <li data-aos="flip-down">Firebase</li>
-        </ul>
-      </div>
-    </div>
-    <div class="parallax">
-      <span>Education</span>
-    </div>
-    <div id="education">
-      <div>
-        <h4 class="mb-0">Bachelor of Engineering <small>(Electronics and
-            Communications)</small></h4>
-        <small>Sardar Patel University, VV Nagar, Gujarat, India</small>
-      </div>
-    </div>
-    <div class="parallax">
-      <span>Projects</span>
-    </div>
-    <div id="projects">
-      <div class="myProject row mx-0">
-
-        <div class="col-12 col-md-6 projectImgSection p-0" data-aos="zoom-in-right" >
-          <div class="overlay pr-1">
-            <div class="text text-center">
-              <button type="button" class="currentVersion btn btn-secondary border rounded-pill">View Current
-                Version</button>
-              <button type="button" class="codeOnGithub btn btn-secondary border rounded-pill">Code on Github</button>
+          <div id="myName" class="profileCol col-12 col-md-8 mt-4 m-md-0 p-0">
+            <div class="inner">
+              <h1 class="display-3">Sagar Patel</h1>
+              <h6>Software Quality Analyst</h6>
             </div>
+
           </div>
-          <img class="projectImg" src="./assets/images/star_wars_rpg.png"
-            alt="https://github.com/SLenKsP/Star-Wars-RPG-Game" data="https://slenksp.github.io/Star-Wars-RPG-Game/" />
-        </div>
-        <div class="col-12 col-md-6 projectImgSection p-0" data-aos="zoom-in-left" >
-          <div class="overlay">
-            <div class="text text-center">
-              <button type="button" class="currentVersion btn btn-secondary border rounded-pill">View Current
-                Version</button>
-              <button type="button" class="codeOnGithub btn btn-secondary border rounded-pill">Code on Github</button>
-            </div>
-          </div>
-          <img class="projectImg" src="./assets/images/national_parks.png"
-            alt="https://github.com/SLenKsP/Project_1_National_Parks"
-            data="https://slenksp.github.io/Project_1_National_Parks/" />
         </div>
 
-        <div class="col-12 col-md-6 projectImgSection p-0" data-aos="zoom-in-right" >
-          <div class="overlay m-0 p-0">
-            <div class="text text-center p-0">
-              <button type="button" class="currentVersion btn btn-secondary border rounded-pill">View Current
-                Version</button>
-              <button type="button" class="codeOnGithub btn btn-secondary border rounded-pill">Code on Github</button>
-            </div>
-          </div>
-          <img class="projectImg" src="./assets/images/trivia.png"
-            alt="https://github.com/SLenKsP/Trivia-Timed-Questions"
-            data="https://slenksp.github.io/Trivia-Timed-Questions/" />
+      </div>
+      <div id="aboutMe">
+        <p>
+          I am a QA Analyst with nearly 5 years of experience providing
+          Applications with accurate and thorough testing and analysis of
+          manufacturing processes. Profound understanding of using samples,
+          control points, and process variables to test a product’s quality,
+          reliability, and functionality.
+        </p>
+        <p>
+          Looking for some change and some more challenges at the job, I decided
+          to learn some coding. Tried to look into some programming and
+          scripting languages and I found myself comfirtable with Java and
+          Javascript and decided to know more about it.
+        </p>
+      </div>
+      <div class="parallax">
+        <span>Work Experience</span>
+      </div>
+      <div id="workExperience">
+        <div class="exp mb-2" data-aos="fade-right">
+          <h3 class="mb-0">Software Quality Analyst</h3>
+          <small>Garmin International, Olathe, KS</small>
+          <ul>
+            <li>Daily updates and strategy planning with Developers and project leads</li>
+            <li>Test planning based on Product requirements</li>
+            <li>Write and update Automation Test cases and running Automation Suites</li>
+            <li>Crash and performance monitoring of Apps after releases</li>
+            <li>Write training documents</li>
+            <li>Mentor New team members</li>
+          </ul>
         </div>
-        <div class="col-12 col-md-6 projectImgSection p-0" data-aos="zoom-in-left" >
-          <div class="overlay m-0 p-0">
-            <div class="text text-center p-0">
-              <button type="button" class="currentVersion btn btn-secondary border rounded-pill">View Current
-                Version</button>
-              <button type="button" class="codeOnGithub btn btn-secondary border rounded-pill">Code on Github</button>
-            </div>
-          </div>
-          <img class="projectImg" src="./assets/images/word_guess_game.png"
-            alt="https://github.com/SLenKsP/Word-Guess-Game" data="https://slenksp.github.io/Word-Guess-Game/" />
+        <div class="exp mb-2" data-aos="fade-left">
+          <h3 class="mb-0">Software Quality Specialist</h3>
+          <small>Garmin International, Olathe, KS</small>
+          <ul>
+            <li>Test Planning</li>
+            <li>Write and update Test cases for features</li>
+            <li>Conduct various type of manual Testing- Regression, User
+              Acceptance,
+              Black-box, White-box, UI</li>
+          </ul>
+
+        </div>
+        <div class="exp mb-2" data-aos="fade-right">
+          <h3 class="mb-0">Software Quality Tester</h3>
+          <small>Garmin International, Olathe, KS</small>
+          <ul>
+            <li>Assist with Test execution during test life-cycle</li>
+            <li>Setup and testing Driver Certification for USB drivers</li>
+            <li>Garmin Maps and Map Update Testing</li>
+            <li>Defect and bug management using JIRA</li>
+            <li>Write Documentation on Confluence</li>
+          </ul>
+        </div>
+        <div class="exp mb-2" data-aos="fade-left">
+          <h3 class="mb-0">Product Support Specialist</h3>
+          <small>Garmin International, Olathe, KS</small>
+          <ul>
+            <li>Attend Customers contacting via Phone/Email/Chat for Garmin
+              Products</li>
+            <li>Identify and sometimes recommend improvements</li>
+            <li>Assist Customers via remotely login</li>
+            <Li>Test products</Li>
+          </ul>
+        </div>
+        <div class="exp mb-2" data-aos="fade-right">
+          <h3 class="mb-0">Technical Engineer</h3>
+          <small>3R Telecom Ltd, Essex, UK</small>
+          <ul>
+            <li>Perform Daily user Data Backups</li>
+            <li>Desktop and Router Management</li>
+            <li>Troubleshoot Products and services to best fir for needs</li>
+            <li>Manage Database System, Asset Control</li>
+            <li>3rd line support for Electronic Point of Sale Systems</li>
+            <li>Modify EPOS System according to client requrements</li>
+            <li>EPOS Installation, Training, Support, Repair and Replacement</li>
+            <li>Test of updated Software Versions</li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="parallax">
-      <span>Write to me</span>
-    </div>
-    <div id="contactMe" class="mt-2">
-      <form class="form">
-        <div class="row mb-2">
-          <div class="form-group col-6" data-aos="fade-right" >
-            <input type="text" class="form-control" id="firstName" placeholder="First name">
-          </div>
-          <div class="form-group col-6" data-aos="fade-left" >
-            <input type="text" class="form-control" id="lastName" placeholder="Last name">
-          </div>
-        </div>
-        <div class="row mb-2">
-          <div class="form-group col-12" data-aos="flip-right" >
-            <input type="email" class="form-control" id="email" placeholder="Email address">
-          </div>
-        </div>
-        <div class="row mb-2">
-          <div class="form-group col-12" data-aos="flip-left" >
-            <input type="text" class="form-control" id="subject" placeholder="Subject of the message">
-          </div>
-        </div>
-        <div class="row mb-2">
-          <div class="form-group col-12" data-aos="zoom-out-down" >
-            <textarea cols="30" rows="10" class="form-control" id="message"
-              placeholder="Type your message here.."></textarea>
+      <div class="parallax">
+        <span>Skills</span>
+      </div>
+      <div id="skills">
+        <div>
+          <h5 data-aos="flip-up">Programming</h5>
+          <div id="programmingLanguages" class="row text-center">
+            <div class="col-md-4 mb-4" data-aos="flip-down">
+              <i class="devicon-html5-plain-wordmark"></i>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="flip-down">
+              <i class="devicon-css3-plain-wordmark"></i>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="flip-down">
+              <i class="devicon-bootstrap-plain-wordmark"></i>
+            </div>
+            <div class="col-md-4" data-aos="flip-down"><i
+                class="devicon-javascript-plain"></i></div>
+            <div class="col-md-4" data-aos="flip-down"><i
+                class="devicon-jquery-plain-wordmark"></i></div>
+            <div class="col-md-4 mb-4" data-aos="flip-down"><i
+                class="devicon-nodejs-plain"></i></div>
+            <div class="col-md-12" data-aos="flip-down"><i
+                class="devicon-java-plain-wordmark"></i></div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <input data-aos="zoom-out-down" type="submit" id="submitMessage" class="btn btn-info border
+        <!-- <div>
+          <h5 data-aos="flip-up">Tools</h5>
+          <ul>
+            <li data-aos="flip-down">Charle's Proxy</li>
+            <li data-aos="flip-down">Android UI automator</li>
+            <li data-aos="flip-down">Application LifeCycle Management</li>
+            <li data-aos="flip-down">Fiddler</li>
+            <li data-aos="flip-down">Github</li>
+            <li data-aos="flip-down">Firebase</li>
+          </ul>
+        </div> -->
+      </div>
+      <div class="parallax">
+        <span>Education</span>
+      </div>
+      <div id="education">
+        <div>
+          <h4 class="mb-0">Bachelor of Engineering <small>(Electronics and
+              Communications)</small></h4>
+          <small>Sardar Patel University, VV Nagar, Gujarat, India</small>
+        </div>
+      </div>
+      <div class="parallax">
+        <span>Projects</span>
+      </div>
+      <div id="projects">
+        <div class="myProject row mx-0">
+
+          <div class="col-12 col-md-6 projectImgSection p-0"
+            data-aos="zoom-in-right">
+            <div class="overlay pr-1">
+              <div class="text text-center">
+                <button type="button" class="currentVersion btn btn-secondary
+                  border rounded-pill">View Current
+                  Version</button>
+                <button type="button" class="codeOnGithub btn btn-secondary
+                  border rounded-pill mt-2">Code on Github</button>
+              </div>
+            </div>
+            <img class="projectImg" src="./assets/images/star_wars_rpg.png"
+              alt="https://github.com/SLenKsP/Star-Wars-RPG-Game"
+              data="https://slenksp.github.io/Star-Wars-RPG-Game/" />
+          </div>
+          <div class="col-12 col-md-6 projectImgSection p-0"
+            data-aos="zoom-in-left">
+            <div class="overlay">
+              <div class="text text-center">
+                <button type="button" class="currentVersion btn btn-secondary
+                  border rounded-pill">View Current
+                  Version</button>
+                <button type="button" class="codeOnGithub btn btn-secondary
+                  border rounded-pill mt-2">Code on Github</button>
+              </div>
+            </div>
+            <img class="projectImg" src="./assets/images/national_parks.png"
+              alt="https://github.com/SLenKsP/Project_1_National_Parks"
+              data="https://slenksp.github.io/Project_1_National_Parks/" />
+          </div>
+
+          <div class="col-12 col-md-6 projectImgSection p-0"
+            data-aos="zoom-in-right">
+            <div class="overlay m-0 p-0">
+              <div class="text text-center p-0">
+                <button type="button" class="currentVersion btn btn-secondary
+                  border rounded-pill">View Current
+                  Version</button>
+                <button type="button" class="codeOnGithub btn btn-secondary
+                  border rounded-pill mt-2">Code on Github</button>
+              </div>
+            </div>
+            <img class="projectImg" src="./assets/images/trivia.png"
+              alt="https://github.com/SLenKsP/Trivia-Timed-Questions"
+              data="https://slenksp.github.io/Trivia-Timed-Questions/" />
+          </div>
+          <div class="col-12 col-md-6 projectImgSection p-0"
+            data-aos="zoom-in-left">
+            <div class="overlay m-0 p-0">
+              <div class="text text-center p-0">
+                <button type="button" class="currentVersion btn btn-secondary
+                  border rounded-pill">View Current
+                  Version</button>
+                <button type="button" class="codeOnGithub btn btn-secondary
+                  border rounded-pill mt-2">Code on Github</button>
+              </div>
+            </div>
+            <img class="projectImg" src="./assets/images/word_guess_game.png"
+              alt="https://github.com/SLenKsP/Word-Guess-Game"
+              data="https://slenksp.github.io/Word-Guess-Game/" />
+          </div>
+        </div>
+      </div>
+      <div class="parallax">
+        <span>Write to me</span>
+      </div>
+      <div id="contactMe" class="mt-2">
+        <form class="form">
+          <div class="row mb-2">
+            <div class="form-group col-6" data-aos="fade-right">
+              <input type="text" class="form-control" id="firstName"
+                placeholder="First name">
+            </div>
+            <div class="form-group col-6" data-aos="fade-left">
+              <input type="text" class="form-control" id="lastName"
+                placeholder="Last name">
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="form-group col-12" data-aos="flip-right">
+              <input type="email" class="form-control" id="email"
+                placeholder="Email address">
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="form-group col-12" data-aos="flip-left">
+              <input type="text" class="form-control" id="subject"
+                placeholder="Subject">
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="form-group col-12" data-aos="zoom-out-down">
+              <textarea cols="30" rows="10" class="form-control" id="message"
+                placeholder="Type your message here.."></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <input data-aos="zoom-out-down" type="submit" id="submitMessage"
+                class="btn btn-light font-weight-bolder border
                 rounded-pill" value="Send Message">
+            </div>
           </div>
-        </div>
-      </form>
-    </div>
-    <!-- footer -->
-    <footer class="site-section bg-dark footer">
-      <div class="container p-3">
-        <div class="row mb-5">
-          <div class="col-md-4" data-aos="fade-right">
-            <h3 class="footer-title">My Address</h3>
-            <p><span class="d-inline-block d-md-block">14407 W. 94th Ter</span>
-              San Lenexa, Kansas, 66215</p>
-          </div>
-          <div class="col-md-4 mx-auto" data-aos="zoom-in-up">
-            <h3 class="footer-title">Phone</h3>
-            <p><span class="d-inline-block d-md-block">913-213-4041</span></p>
-            <h3 class="footer-title"><a href="https://www.linkedin.com/in/sagar-patel-764b73122"
-                target="_blank">Linkedin</a></h3>
-
-          </div>
-          <div class="col-md-4" data-aos="fade-left">
-            <h3 class="footer-title">Email</h3>
-            <p><span class="d-inline-block d-md-block">sagarpatel16@gmail.com</span></p>
-            <h3 class="footer-title"><a href="https://github.com/SLenKsP" target="_blank">Github</a></h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 text-center">
-            <p>
-
-              Copyright ©
-              <script type="text/javascript">document.write(new Date().getFullYear());</script>
-              | Sagar Patel
-
-            </p>
-          </div>
-        </div>
+        </form>
       </div>
-    </footer>
-  </div>
+      <!-- footer -->
+      <footer class="site-section footer">
+        <div class="container p-3">
+          <div class="row mb-5">
+            <div class="col-md-4" data-aos="fade-right">
+              <h3 class="footer-title">My Address</h3>
+              <p><span class="d-inline-block d-md-block">14407 W. 94th Ter</span>
+                Lenexa, Kansas, 66215</p>
+            </div>
+            <div class="col-md-4 mx-auto" data-aos="zoom-in-up">
+              <h3 class="footer-title">Phone</h3>
+              <p><span class="d-inline-block d-md-block">913-213-4041</span></p>
+              <h3 class="footer-title"><a
+                  href="https://www.linkedin.com/in/sagar-patel-764b73122"
+                  target="_blank">Linkedin</a></h3>
 
-  <!-- Supporting JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <!-- aos js -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
+            </div>
+            <div class="col-md-4" data-aos="fade-left">
+              <h3 class="footer-title">Email</h3>
+              <p><span class="d-inline-block d-md-block">sagarpatel16@gmail.com</span></p>
+              <h3 class="footer-title"><a href="https://github.com/SLenKsP"
+                  target="_blank">Github</a></h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <p>
+
+                Copyright ©
+                <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                | Sagar Patel
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Supporting JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
     AOS.init();
   </script>
-  <script src="./assets/javascript/script.js">
+    <script src="./assets/javascript/script.js">
 
   </script>
-</body>
+  </body>
 
 </html>
