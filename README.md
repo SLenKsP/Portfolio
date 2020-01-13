@@ -56,6 +56,9 @@ Looking for some change and some more challenges at the job, I decided to learn 
 - Node JS
 - Jquery
 - Java
+- MySQL
+- MongoDB
+- Express JS
 
 ## Education
 
@@ -71,6 +74,10 @@ Sardar Patel University, VV Nagar, Gujarat, India
 - [Word Guess Game](https://slenksp.github.io/Word-Guess-Game/)
 
 - [Trivia Game](https://slenksp.github.io/Trivia-Timed-Questions/)
+
+- [Liri Bot](https://github.com/SLenKsP/Liri-Bot)
+
+- [Freedom Bank](https://freedombankproject.herokuapp.com/) 
 
 ## Contact
 
